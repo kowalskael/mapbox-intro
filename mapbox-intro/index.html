@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- informacja dla przeglądarki, że jest to plik HTML -->
+
+<html>      <!-- wszystko ponizej jest zawarte w tagach HTML -->
+<head>      <!-- sekcja head jest dla metadanych elementem priorytetowym dla zbudowania strony -->
+
+ <!-- informacja o systemie kodowania znaków, jaki powinien posiadać dany dokument -->
+ <!-- utf-8 to system kodowania Unicode w pełni kompatybilny z ASCII -->
+ <meta charset='utf-8' />
+
+ <!-- tytuł strony, który pojawi się na pasku przeglądarki -->
+ <title>Map Test</title>
+
+ <!-- polecenie ignorowania przechowywania pamięci podręcznej -->
+ <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
+ <meta http-equiv='Pragma' content='no-cache' />
+ <meta http-equiv='Expires' content='0' />
+
+ <!-- skalowanie mapy dla urządzeń mobilnych -->
+ <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+ <!-- linki do stylów css -->
+ <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css' rel='stylesheet' />
+ <link href='style.css' rel='stylesheet' />
+
+ <!-- linki do plików javascript -->
+ <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
+
+</head>
+<body>      <!-- widoczna struktura strony zaczyna się tutaj -->
+
+<!-- element 'mapa' -->
+<div id='map'></div>
+
+<!-- element 'info' -->
+<div id='info'></div>
+<a id="downloadLink" href="" download="map.png">Download PNG</a>
+
+<!-- załadowanie pliku z naszym kodem javascript -->
+<script src='index.js'></script>
+
+</body>
+</html>
